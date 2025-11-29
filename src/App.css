@@ -1,0 +1,95 @@
+/* Fade transition for screens */
+.fade-screen {
+  opacity: 1;
+  transition: opacity 0.8s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+}
+.fade-screen.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
+.app-root {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+/* Fade transition for screens */
+.fade-screen {
+  opacity: 1;
+  transition: opacity 0.8s ease;
+}
+.fade-screen.fade-out {
+  opacity: 0;
+}
+.subtitle {
+  font-family: 'Jura', Arial, sans-serif;
+  font-size: 20px;
+  color: #888;
+  margin-top: 12px;
+}
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.bg-image2 {
+  height: 100vh;
+  width: 100vw;
+  background-color: red !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-color removed to show image */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+body {
+  background: #ffffff;
+  font-family: 'Inter', Arial, sans-serif;
+}
+
+.bg-image {
+  height: 100vh;
+  width: 100vw;
+  background-color: blue !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-color removed to show image */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-family: 'Jura', Arial, sans-serif;
+  font-size: 37px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 2px 8px #000, 0 1px 0 #222;
+  /* background and border removed */
+  letter-spacing: 0px;
+}
+
+
+/* Example: Add to a selector, e.g., p for paragraphs */
+p {
+  color: #555;
+  font-size: 18px;
+}
